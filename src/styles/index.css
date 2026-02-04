@@ -1,6 +1,10 @@
 @import "./fonts.css";
-@import "./tailwind.css";
 @import "./theme.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -15,6 +19,7 @@
 .animate-fade-in {
   animation: fade-in 0.35s ease-out;
 }
+
 @keyframes float {
   0% {
     transform: translateY(0px);
