@@ -55,10 +55,6 @@
     --ring: 90 90 90;
   }
 
-  * {
-    border-color: rgb(var(--border));
-  }
-
   body {
     background-color: rgb(var(--background));
     color: rgb(var(--foreground));
