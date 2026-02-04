@@ -1,0 +1,38 @@
+.loader-bar {
+  position: absolute;
+  bottom: 0;
+  width: 10px;
+  height: 50%;
+  background: #111;
+  transform-origin: center bottom;
+}
+
+.bar1 { left: 0; animation: barUp1 4s infinite; }
+.bar2 { left: 15px; animation: barUp2 4s infinite; }
+.bar3 { left: 30px; animation: barUp3 4s infinite; }
+.bar4 { left: 45px; animation: barUp4 4s infinite; }
+.bar5 { left: 60px; animation: barUp5 4s infinite; }
+
+.loader-ball {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background: #2563eb;
+  border-radius: 50%;
+  animation: ballMove 4s infinite;
+}
+
+/* Animations */
+@keyframes ballMove {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(60px, -40px); }
+  100% { transform: translate(0, 0); }
+}
+
+@keyframes barUp1 { 0%,100% { transform: scaleY(0.2); } 50% { transform: scaleY(1); } }
+@keyframes barUp2 { 0%,100% { transform: scaleY(0.4); } 50% { transform: scaleY(0.8); } }
+@keyframes barUp3 { 0%,100% { transform: scaleY(0.6); } }
+@keyframes barUp4 { 0%,100% { transform: scaleY(0.8); } 50% { transform: scaleY(0.4); } }
+@keyframes barUp5 { 0%,100% { transform: scaleY(1); } 50% { transform: scaleY(0.2); } }
